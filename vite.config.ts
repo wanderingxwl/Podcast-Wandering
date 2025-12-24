@@ -11,7 +11,7 @@ const projectRoot = __dirname
 // ✅ 根据环境设置 base：开发用 '/', 生产用 '/<repo>/'
 const REPO_NAME = 'Podcast-Wandering' // ← 修改为你的仓库名
 const BASE_PATH = process.env.NODE_ENV === 'production' ? `/${REPO_NAME}/` : '/'
-
+console.log(BASE_PATH)
 export default defineConfig(() => {
   return {
     // ✅ 关键：为 GitHub Pages 设置 base
